@@ -1,0 +1,102 @@
+*
+{
+    padding: 0;
+}
+
+
+
+
+.logo
+{
+    background-color: black;
+    padding: 20px;
+    
+}
+
+.label
+{
+    display: inline-block;
+    color:white;
+}
+
+li{
+    display: inline-block;
+    color: white;
+}
+
+ul{
+    text-decoration : none;
+    display: inline-block;
+    position: relative;
+    left: -20px;
+    top:-15px;
+}
+
+.albumexample{
+    text-align: center;
+    padding: 20px;
+}
+
+.card
+{
+    width: 200px;
+    margin:50px;
+    text-align:center;
+/*     
+    display:inline-block; */
+}
+
+.image
+{
+    width:100%;
+}
+
+.row
+{
+    display:inline-block;
+}
+
+.thumbnails
+{
+    text-align:center;
+}
+
+footer{
+    background-color: lightgray;
+
+}
+
+.bar-icon
+{
+    color: white;
+    display:none;
+}
+
+
+/* //the following media command is used to make chnages for display size,
+till our screen size if max 500px different methods(colors,position etc) as written below would be displayed. */
+
+
+@media screen and (max-width: 500px){
+body
+{
+    background-color: lightpink;
+}
+
+.bar-icon{
+    display:block;
+}
+
+li {
+display: block;
+margin:0;
+text-align:center;
+color: white;
+background-color: grey;
+}
+
+ul{
+    text-decoration: none;
+    width: 100%;
+}
+}    
