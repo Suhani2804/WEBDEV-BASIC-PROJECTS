@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,13 +18,19 @@
 </head>
 <body>
     <nav class="logo">
-        <label> Album</label>
+        <label class="label"> Album</label>
         <ul>
+            <li>Home</li>
             <li>Contact</li>
-            <li></li>
+            <li>About</li>
         </ul>
+
+        <!-- //importing square icon from fontawesome -->
+        <label class="bar-icon">
         <i class="fa fa-bars" aria-hidden="true"></i>
+    </label>
     </nav>
+
     <main>
         <section class="albumexample">
             <form>
@@ -32,34 +39,36 @@
 
                 <label>Enter description</label>
                 <input id="description" type="text"></input>
-
-                <!-- //IMPRT BUTTON LIBRARY FROM INTERNET FOR SUBMIT BUTTON HERE -->
+<!-- 
+                //IMPRT BUTTON LIBRARY FROM INTERNET FOR SUBMIT BUTTON HERE
+                 just type in button bootstrap to access this specific command -->
                 <button type="button" class="btn btn-primary">Submit</button>
-                
             </form>
-            <h1>Album example</h1>
+
+
+            <!-- <h1>Album example</h1>
             <p>Something short
                 and para....
             </p>
             <button> Main call to action</button>
-            <button> Secondary action</button>
+            <button> Secondary action</button> -->
         </section>
-        <section class="Thumbnails">
+        <section class="thumbnails">
             <div class="row">
                 <div class="card">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png">
+                    <img class="image" id="imageId1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png">
+                    <p id="paragraphId">
+                        This is a wider card with supporting text below...
+                    </p>
+                </div>
+                <div class="card">
+                    <img class="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png">
                     <p>
                         This is a wider card with supporting text below...
                     </p>
                 </div>
                 <div class="card">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png">
-                    <p>
-                        This is a wider card with supporting text below...
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png">
+                    <img class="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png">
                     <p>
                         This is a wider card with supporting text below...
                     </p>
@@ -68,19 +77,19 @@
 
                 <div class="row">
                     <div class="card">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png">
+                        <img class="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png">
                         <p>
                             This is a wider card with supporting text below...
                         </p>
                     </div>
                     <div class="card">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png">
+                        <img class="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png">
                         <p>
                             This is a wider card with supporting text below...
                         </p>
                     </div>
                     <div class="card">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png">
+                        <img class="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png">
                         <p>
                             This is a wider card with supporting text below...
                         </p>
@@ -89,19 +98,19 @@
 
                     <div class="row">
                         <div class="card">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png">
+                            <img class="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png">
                             <p>
                                 This is a wider card with supporting text below...
                             </p>
                         </div>
                         <div class="card">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png">
+                            <img class="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png">
                             <p>
                                 This is a wider card with supporting text below...
                             </p>
                         </div>
                         <div class="card">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png">
+                            <img class="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/330px-Image_created_with_a_mobile_phone.png">
                             <p>
                                 This is a wider card with supporting text below...
                             </p>
@@ -115,6 +124,10 @@
             <p>
                 album example is bootstrap.....
             </p>
+
+
+            <!-- //now this is a method to add hyperlink in the image to go back to top -->
+            <a href="#">Back To Top</a>
         </footer>
     </main>
 </body>
@@ -128,4 +141,16 @@
     const value=image.value;
 
 </script> -->
+
+<script>
+    var image = document.getElementById("imageId");
+    const button = document.getElementsByClassName("btn");
+    const imageCard = document.getElementById("imageId1");
+    const description =  document.getElementById("descriptionId");    
+    button[0].addEventListener("click" , function () {
+         console.log("button clicked");
+         const value = image.value;
+         imageCard.setAttribute("src", value);
+    })   
+ </script>
 </html>

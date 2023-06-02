@@ -1,10 +1,10 @@
-*
-{
+/* This is used to apply this to all the document */
+
+* {
     padding: 0;
-}
-
-
-
+    margin: 0;
+    box-sizing: border-box;
+  }
 
 .logo
 {
@@ -19,31 +19,31 @@
     color:white;
 }
 
+
+
+ul{
+    text-decoration: none;
+  float: right;
+  margin-right: 20px;
+  margin-top: -1px;
+}
+
 li{
     display: inline-block;
     color: white;
-}
-
-ul{
-    text-decoration : none;
-    display: inline-block;
-    position: relative;
-    left: -20px;
-    top:-15px;
-}
+    margin: -100px 5px}
 
 .albumexample{
     text-align: center;
-    padding: 20px;
+    padding: 50px;
+    padding-left:100px;
 }
 
 .card
 {
-    width: 200px;
-    margin:50px;
+    width: 25%;
     text-align:center;
-/*     
-    display:inline-block; */
+    display:inline-block;
 }
 
 .image
@@ -59,11 +59,14 @@ ul{
 .thumbnails
 {
     text-align:center;
+    margin:10px;
+    padding-left:50px;
 }
 
-footer{
+footer
+{
     background-color: lightgray;
-
+    padding:20px;
 }
 
 .bar-icon
@@ -84,7 +87,10 @@ body
 }
 
 .bar-icon{
-    display:block;
+    display: block;
+    float: right;
+    position: relative;
+    top: -70px;
 }
 
 li {
@@ -92,11 +98,12 @@ display: block;
 margin:0;
 text-align:center;
 color: white;
-background-color: grey;
 }
 
 ul{
     text-decoration: none;
     width: 100%;
+    float:none;
+    margin:0;
 }
 }    
