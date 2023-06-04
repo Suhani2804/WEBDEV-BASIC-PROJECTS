@@ -12,6 +12,12 @@
          -->
     <link rel="stylesheet" href="album.css">
     <!-- //this is our own stylesheet -->
+
+    <script src="album.js" defer> </script>
+    <!-- //this line is to link javascript file to html
+    //defer is used to first read whole html file and only then sync javascript file
+other option is to write async(use this if there is no dependency and no proper order, use defer when there is proper order and dependency)
+better to use defer always -->
         
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css"> 
     
@@ -36,10 +42,10 @@
         <section class="albumexample">
             <form>
                 <label>Enter Image URl</label>
-                <input id="imgid" type="text"></input>
+                <input id="imageId" type="text"></input>
 
                 <label>Enter description</label>
-                <input id="description" type="text"></input>
+                <input id="descriptionId" type="text"></input>
 <!-- 
                 //IMPRT BUTTON LIBRARY FROM INTERNET FOR SUBMIT BUTTON HERE
                  just type in button bootstrap to access this specific command -->
@@ -133,26 +139,5 @@
     </main>
 </body>
 
-<!-- //THE BELOW PART IS FOR TAKING DYNAMIC INPUT FROM USER -->
-<!-- <script>
-    var image=document.getElemntById("imageid");
-    const button=document.getElementByClassName("btn");
-    constimageCard=document.getElementbyId("imageid1");
-    button[0].addEventListener("click",function(){console.log("button clicked")})
-    const value=image.value;
-    
 
-</script> -->
-
-<script>
-    var image = document.getElementById("imageId");
-    const button = document.getElementsByClassName("btn");
-    const imageCard = document.getElementById("imageId1");
-    const description =  document.getElementById("descriptionId");    
-    button[0].addEventListener("click" , function () {
-         console.log("button clicked");
-         const value = image.value;
-         imageCard.setAttribute("src", value);
-    })   
- </script>
 </html>
