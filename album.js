@@ -6,7 +6,9 @@ const description = document.getElementById("descriptionId");
 const imageURL=document.getElementById("imageId");
 //the above line is to get image url from user
 const section=document.getElementsByClassName("thumbnails")[0];
-//above line is to create a scetion thumbnails
+//above line is to create a secion thumbnails
+//getelementsbyclassname returns an array
+//we havw put[0] as in section class thumbnails there is only one section which is the first one
 
 // in below function(e) has no name it is used directly that is it is ananoymous function
 // all ananoymous functions need a code inside it
