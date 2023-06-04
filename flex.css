@@ -1,38 +1,45 @@
 .parent
 {
     border:1px solid black;
-    height:400px;
+    height:1000px;
     display:flex;     
     /* //The above line accomodates the three boxes in a row as default direction of flex is row */
-    flex-direction: row;  
+
+    /* flex-direction: row;   */
     /* //this above line is by default row 
     other options: row reverse(starts from end that is right hand side and also changes direction that is 3->3->1 is displayed)
     , column reverse  */
+    justify-content: center;
+    align-items:center;
+
+    /* //the below line is to write flex direction and wrap together */
+    flex-flow: row wrap;
 }
 
 .child1
 {
-    border:1px solid black;
-    height:100px;
-    margin:10px;
-    background-color:red;
-    flex-grow:2;
+    border: 1px solid black;
+    height: 100px;
+    margin: 10px;
+    background-color: blue;
+    flex-grow: 2;
+    align-self: flex-start;
+    order: 7;
 }
 
-.child2
-{
-    border:1px solid black;
-    height:100px;
-    margin:10px;
-    background-color:blue;
-    flex-grow:1;
-}
-
-.child3
-{
-    border:1px solid black;
-    height:100px;
-    margin:10px;
-    background-color:green;
-    flex-grow:1;
-}
+.child2 {
+    border: 1px solid black;
+    height: 100px;
+    margin: 10px;
+    background-color: red;
+    flex-grow: 2;
+  }
+  
+  .child3 {
+    border: 1px solid black;
+    height: 100px;
+    margin: 10px;
+    background-color: green;
+    flex-grow: 1;
+    order: -1;
+  }
