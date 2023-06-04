@@ -8,7 +8,8 @@ const imageURL=document.getElementById("imageId");
 const section=document.getElementsByClassName("thumbnails")[0];
 //above line is to create a scetion thumbnails
 
-
+// in below function(e) has no name it is used directly that is it is ananoymous function
+// all ananoymous functions need a code inside it
 imageURL.addEventListener("change",function(e)
 {
     console.log(e);
@@ -41,8 +42,14 @@ function createAlbum(imageURL,description)
     //the above line is to write content in different elements
     //text in double quotes is written
     paragraph.innerHTML= description.value;
+    console.log("paragraph", paragraph);
 
+  albumdiv.appendChild(image);
+  albumdiv.appendChild(paragraph);
 
+  console.log("album div", albumdiv);
+
+  return albumdiv;
 
 
 
@@ -53,5 +60,10 @@ function createAlbum(imageURL,description)
 
 
  
+// function expression
+// const value=function()
+// {}
 
-
+// function declarartion
+// fucntion AbortController()
+// {}
