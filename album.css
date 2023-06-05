@@ -1,16 +1,31 @@
 /* This is used to apply this to all the document */
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
   }
 
+
+  body
+  {
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+  }
+
+
 .logo
 {
     background-color: black;
     padding: 20px;
+    display:flex;
+    justify-content:space-around;
     
+}
+
+.nav-items
+{
+    display:flex;
 }
 
 .label
@@ -18,8 +33,6 @@
     display: inline-block;
     color:white;
 }
-
-
 
 ul{
     text-decoration: none;
@@ -31,19 +44,17 @@ ul{
 li{
     display: inline-block;
     color: white;
-    margin: -100px 5px}
+    margin: -100px 5px
+}
 
 .albumexample{
     text-align: center;
     padding: 50px;
-    padding-left:100px;
 }
 
 .card
 {
-    width: 25%;
-    text-align:center;
-    display:inline-block;
+    width: 100%;
 }
 
 .image
@@ -51,28 +62,29 @@ li{
     width:100%;
 }
 
-.row
-{
-    display:inline-block;
-}
 
 .thumbnails
 {
-    text-align:center;
-    margin:10px;
-    padding-left:50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: center;
+    gap: 20px;
+    margin: 50px;
 }
 
 footer
 {
     background-color: lightgray;
     padding:20px;
+    display:flex;
+    justify-content:space-between;
 }
 
 .bar-icon
 {
     color: white;
-    display:none;
+    
 }
 
 
