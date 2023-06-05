@@ -27,7 +27,8 @@
     order: 7;
 }
 
-.child2 {
+.child2 
+{
     border: 1px solid black;
     height: 100px;
     margin: 10px;
@@ -35,7 +36,8 @@
     flex-grow: 2;
   }
   
-  .child3 {
+  .child3 
+  {
     border: 1px solid black;
     height: 100px;
     margin: 10px;
@@ -43,3 +45,6 @@
     flex-grow: 1;
     order: -1;
   }
+
+  /* align-content determines the spacing between lines, while align-items determines how the items as 
+  a whole are aligned within the container. When there is only one line, align-content has no effect. */
