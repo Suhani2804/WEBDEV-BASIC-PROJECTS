@@ -1,7 +1,6 @@
 body
 {
-    /* background-color:rgb(224, 171, 91); */
-    background-image:url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000");
+    background-image:url("https://img.freepik.com/free-photo/abstract-solid-shining-yellow-gradient-studio-wall-room-background_1258-71102.jpg?w=2000");
     display:flex;
     flex-direction:column;
 }
@@ -12,7 +11,6 @@ body
     background-color:black;
     display:flex;
     justify-content:space-around;
-    align-content:center;
     border: 2px solid white;
     color:white;
     height:48px;
@@ -41,15 +39,15 @@ body
 li
 {
     display: inline-block;
-    /* color: white; */
     margin: -100px 5px;
 }
+
 
 /* for second nav bar */
 .navbar2
 {
     display:flex;
-    background-color: black;
+    background-color: rgb(3, 3, 59);
     color:white;
     justify-content:center;
     border: 2px solid white;
@@ -60,40 +58,63 @@ li
     justify-content:flex-start;
 }
 
+/*for image and text at top*/
+.container
+{
+    position:relative;
+    text-align: center;
+    color:white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.imageid
+{
+   object-position:center top;
+   opacity: 1.0;
+   height:400px;
+   width:100%;
+    
+}
+
+.imageid:hover
+{
+    opacity: 0.5;
+}
+
+
 
 /* for main project part now */
 .project
 {
     padding:20px;
     margin:20px;
+    margin-top:6em;
     margin-bottom: 50px;
     text-align:center;
+    color: black;
 }
 
-.image
+.mainmatter
 {
-    width:40%;
-    height:300px;
-    border: 5px solid;
-   padding-right:none;
-    
+    display:flex;
+    justify-content:center;
 }
 
 .sale
 {
-    float:right;
     color:brown;
     font-size:20px;
     width:40%;
     height:100%;
     padding-left:none;
     padding-right:120px;
-}
-
-.mainmatter
-{
-    display:inline-block;
-    padding-left:80px;
 }
 
 h5
