@@ -71,6 +71,7 @@ li
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin-top:3em;
 }
 
 
@@ -93,28 +94,27 @@ li
 /* for main project part now */
 .project
 {
-    padding:20px;
-    margin:20px;
-    margin-top:6em;
-    margin-bottom: 50px;
-    text-align:center;
+    text-align: center;
     color: black;
+}
+
+.form
+{
+    display:flex;
+    flex-direction:column;
 }
 
 .mainmatter
 {
     display:flex;
-    justify-content:center;
+    flex-direction:row-reverse;
+    
 }
 
 .sale
 {
     color:brown;
     font-size:20px;
-    width:40%;
-    height:100%;
-    padding-left:none;
-    padding-right:120px;
 }
 
 h5
@@ -139,12 +139,21 @@ h5
     padding-top:100px;
 }
 
+
+.thumbnail1
+{
+    /* display:grid;
+    
+    grid-template-columns: repeat(3, 100px);
+    grid-auto-rows: minmax(100px, auto); */
+    justify-items: center;
+}
 /* //media commands for displaying page differently at different width */
 @media screen and (max-width:500px)
 {
     body
     {
-        background-color: blueviolet;
+        background-color:lightgoldenrodyellow;
         background-image: none;
     }
 
