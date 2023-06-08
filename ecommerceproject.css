@@ -104,18 +104,7 @@ li
     flex-direction:column;
 }
 
-.mainmatter
-{
-    display:flex;
-    flex-direction:row-reverse;
-    
-}
 
-.sale
-{
-    color:brown;
-    font-size:20px;
-}
 
 h5
 {
@@ -139,15 +128,59 @@ h5
     padding-top:100px;
 }
 
-
-.thumbnail1
+.card
 {
-    /* display:grid;
-    
-    grid-template-columns: repeat(3, 100px);
-    grid-auto-rows: minmax(100px, auto); */
-    justify-items: center;
+    width:100%;
 }
+
+.image{
+    width:100%;
+}
+
+
+/* for the middle images */
+
+.heading
+{
+    text-align:left;
+    margin:20px;
+    padding:10px;
+}
+
+.thumbnail
+{
+    display:grid;
+    grid-template-columns: repeat(6, auto);
+    grid-auto-rows: minmax(100px, auto);
+    /* justify-items: center; */
+    gap:20px;
+    margin-left:20px;
+}
+
+.mainmatter{
+    background-color: rgb(204, 96, 20);
+
+}
+
+/* .thumbanil2
+{
+    display:grid;
+    grid-template-columns: repeat(2,auto);
+    grid-auto-rows: minmax(100px, auto);
+    justify-items:flex-end;
+    gap:20px;
+    margin:50px;
+} */
+
+.card2
+{
+    width:100%;
+}
+
+.image2{
+    width:100%;
+}
+
 /* //media commands for displaying page differently at different width */
 @media screen and (max-width:500px)
 {

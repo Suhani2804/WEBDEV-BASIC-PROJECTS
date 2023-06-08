@@ -1,17 +1,18 @@
 /* This is used to apply this to all the document */
-* {
+* 
+{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-  }
+}
 
 
   body
-  {
+{
     height:100vh;
     display:flex;
     flex-direction:column;
-  }
+}
 
 
 .logo
@@ -95,27 +96,21 @@ till our screen size if max 500px different methods(colors,position etc) as writ
 @media screen and (max-width: 500px){
 body
 {
-    background-color: lightpink;
+    background-color: antiquewhite;
 }
-
-.bar-icon{
-    display: block;
-    float: right;
-    position: relative;
-    top: -70px;
-}
-
 li {
-display: block;
 margin:0;
 text-align:center;
 color: white;
+display: flex;
+flex-direction:column;
+padding:5px;
 }
 
 ul{
-    text-decoration: none;
+    background-color:black;
     width: 100%;
     float:none;
-    margin:0;
+    
 }
 }    
