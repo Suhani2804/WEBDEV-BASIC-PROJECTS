@@ -5,7 +5,7 @@ const description = document.getElementById("descriptionId");
 //above line is to get description from the user
 const imageURL=document.getElementById("imageId");
 //the above line is to get image url from user
-// const section=document.getElementsByClassName("thumbnails")[0];
+const section=document.getElementsByClassName("thumbnails")[0];
 //above line is to create a secion thumbnails
 //getelementsbyclassname returns an array
 //we havw put[0] as in section class thumbnails there is only one section which is the first one
@@ -31,7 +31,7 @@ function createAlbum(imageURL,description)
     const albumdiv=document.createElement("div");
     //above line is to create a div element
     albumdiv.className="card";
-    //this is a class inside di
+    //this is a class inside div and class name is card
     console.log("album div",albumdiv);
     //this is to check if the div elemnt is created
    
