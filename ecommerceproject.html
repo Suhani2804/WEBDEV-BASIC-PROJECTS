@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eCommerce Project</title>
+    <title>Project</title>
     <link rel="stylesheet" href="ecommerceproject.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="ecommerceproject.js" defer></script>
 </head>
 <body>
+
+    <!-- navigation bar 1 -->
     <nav class="logo">
         <label class="label"> eCommerce Site</label>
         <div class="navitems"></div>
 
+        <!-- Search icon on navbar 1 -->
+        <!-- button to search items -->
         <form>
             <label>Search</label>
             <input id="Search" type="text"></input>
@@ -29,7 +34,7 @@
     </nav>
 
 
-
+    <!-- for navbar 2 -->
     <nav class="navbar2">
         <label class="Customer"> </label>
         <div class="items"></div>
@@ -46,6 +51,8 @@
     </nav>
 
     <main>
+
+    <!-- for text on image and the image at top -->
     <div class="container">
     <img class="imageid" src="https://img.freepik.com/premium-photo/top-view-online-shopping-concept-with-credit-card-smart-phone-computer-isolated-office-yellow-table-background_315337-5991.jpg">
     <section class="project">
@@ -54,32 +61,40 @@
         <h1>"Dream eCommerce"</h1>
         <h5>Hope you have a great time browsing the website :)</h5>
     </div>
+
+
+        <!-- the form for entering name and product
+        button to submit the details -->
+
         <form class="form">
             <span>
-            <label id="labelid">Enter Name</label>
+            <label>Enter Name</label>
             <input id="nameid" type="text"></input>
 
             <label>Product</label>
-            <input id="product" type="text"></input>
+            <input id="productid" type="text"></input>
 <!-- 
                 //IMPRT BUTTON LIBRARY FROM INTERNET FOR SUBMIT BUTTON HERE
                  just type in button bootstrap to access this specific command -->
             
-            <button type="button" class="btn btn-primary" style="margin-top :2em;">Submit</button>
+            <button type="button" class="btn2 btn-submit" style="margin-top :2em;">Submit</button>
         </span>
         </form>
         </div>
         </section>
        
+        <!-- the section below the image -->
         <section class="mainmatter">
+
+            <!-- heading on top of that section -->
         <div class="heading">
             <p style="color:white; font-size:30px; ">
                 Today's deals
             </p>
         </div>
 
-        <div class="thumbnail">
-           
+        <!-- the four images below -->
+        <section class="thumbnail">
             <div class="card">
             <img class="image" src="https://www.edesk.com/wp-content/uploads/2021/03/find-trending-products-sell-ecommerce.png">
             <p style="text-align:center; color: white" >
@@ -104,11 +119,10 @@
             <div class="card">
                 <img class="image" src="https://www.edesk.com/wp-content/uploads/2021/03/find-trending-products-sell-ecommerce.png">
                 <p style="text-align:center; color: white">
-                    Deals of the day
+                    70% off
                 </p>
             </div>
-
-        </div>
+        </section>
 
         <!-- <div class="thumbnail2">
                 <div class="card2">
@@ -126,9 +140,7 @@
                 </div>
 
         </div> -->
-        
-
-            <!-- <h1>The Big Sale day is here!</h1>
+             <!-- <h1>The Big Sale day is here!</h1>
             <p>
                 <b>Sale 50% flat on all items</b> listen on website for next 24 hours.
                 Buy <b>products worth 5000 to earn gift vouchers</b> and more.<b>Shopping worth 
@@ -151,7 +163,6 @@
 <footer class="footer">
     <p>Click the below image to check live score :)</p>
     <a href="https://www.cricbuzz.com/"><img class="footerimage" src="https://i.pinimg.com/originals/c8/c4/58/c8c458b420f6fb7aba81ef02e64a0182.gif" ></a>
-
     <p  class="para">Thankyou for visiting this site. Hope you had a great time!</p>
     <a href="#">Back to Top</a>
 </footer>

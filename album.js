@@ -53,15 +53,3 @@ function createAlbum(imageURL,description)
 
   return albumdiv;
 }
-
-
-
-
- 
-// function expression
-// const value=function()
-// {}
-
-// function declarartion
-// fucntion AbortController()
-// {}

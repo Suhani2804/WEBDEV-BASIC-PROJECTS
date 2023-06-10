@@ -30,3 +30,12 @@ var z=function xyz()
 }
 console.log(z);    //Output----->[Function: xyz]
 console.log(z());
+
+
+// function expression
+// const value=function()
+// {}
+
+// function declarartion
+// fucntion AbortController()
+// {}
