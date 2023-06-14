@@ -1,5 +1,7 @@
+//javascript output questions along with explanation and little theory
+
 ////hoisting: able to allocate memory to elemnts even before assigning value
-//(HOISTING IS VERY IMPORTANT)
+//(HOISTING IS VERY IMPORTANT FOR INTERVIEWS)
 
 //below is an example of function declaration as function is just declared without being stored in a variable
 console.log(a);  //undefined

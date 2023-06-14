@@ -162,15 +162,15 @@ h5
 
 }
 
-/* .thumbanil2
+.thumbnail2
 {
     display:grid;
-    grid-template-columns: repeat(2,auto);
+    grid-template-columns: repeat(4,auto);
     grid-auto-rows: minmax(100px, auto);
     justify-items:flex-end;
     gap:20px;
     margin:50px;
-} */
+}
 
 .card2
 {
@@ -179,8 +179,14 @@ h5
 
 .image2{
     width:100%;
+    height:60%;
 }
 
+.bigsale
+{
+    padding:0;
+    margin:0;
+}
 /* //media commands for displaying page differently at different width */
 @media screen and (max-width:500px)
 {
