@@ -2,6 +2,7 @@
 
 ////hoisting: able to allocate memory to elemnts even before assigning value
 //(HOISTING IS VERY IMPORTANT FOR INTERVIEWS)
+//hoisting happens in function declaration only and not in function expression
 
 //below is an example of function declaration as function is just declared without being stored in a variable
 console.log(a);  //undefined
@@ -9,6 +10,8 @@ var a=10;
 var b=20;
 console.log(square(a));
 //above line will get executed even before we declare the function this is known as hoisting in javascript
+
+
 console.log(a); //10
 function square(num)
 {

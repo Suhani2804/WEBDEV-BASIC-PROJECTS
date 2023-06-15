@@ -3,6 +3,7 @@
 const http=require('http');
 
 // the below line is to create a server with two objects request and response
+//the below function is an arrow function
 const server=http.createServer((req,res)=> {
     res.write("welcome to your first nodejs file");
     res.end();

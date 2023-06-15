@@ -104,8 +104,6 @@ li
     flex-direction:column;
 }
 
-
-
 h5
 {
     margin-bottom: 60px;
@@ -139,7 +137,6 @@ h5
 
 
 /* for the middle images */
-
 .heading
 {
     text-align:left;
@@ -187,6 +184,7 @@ h5
     padding:0;
     margin:0;
 }
+
 /* //media commands for displaying page differently at different width */
 @media screen and (max-width:500px)
 {
