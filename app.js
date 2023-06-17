@@ -2,3 +2,5 @@
 var calc = require('./calc.js')
  result = calc.add(67,76)    
 console.log("output",+ result)
+
+
