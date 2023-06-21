@@ -16,16 +16,23 @@ const obj=a.forEach(function(num)   //forEach does not return anything so we don
 {
     console.log(num);
 })
+
+//writing gthe above function as an arrow function:
+const objarrow=a.foreach((num)=>
+{
+    console.log(num);
+})
 //for each does not return anything so below statement gives undefined
 console.log("forEach: ");
 console.log(obj);
+//other array methods include: shift---->removes the first element of array, unshift----->add one or more elemnts at the beginning of the array
+//indexOf()---->returns the index of the first occurence of a specified element in the array
 
 
 //map
 //map is used to tranform the contents of array
 //map always returns a new array
 //does not change the contents of the previous array
-
 //to print the sqaure of every number in array
 const squaredarray= a.map(function(num)
 {
@@ -34,6 +41,8 @@ const squaredarray= a.map(function(num)
 console.log("map: ");
 console.log(squaredarray);
 //here we store the map value in an array as it returns an array so we need to store it
+//writing the above function as an arrow function:
+
 
 
 //filter

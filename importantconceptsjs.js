@@ -94,4 +94,57 @@ console.log(window.b); //prints 6 as value of var is stored in global scope
 
 //lexical environment: using lexical environment we can access those variables which are declared outside any function
 
-//shadowing concept in notebook
+//shadowing
+var a = 100;
+{
+  a = 10;
+  let b = 20;
+  const c = 30;
+  console.log(a); // 10
+  console.log(b); // 20
+  console.log(c); // 30
+}
+console.log(a);
+/** Behaviour in case of let & const */
+let b = 100;
+{
+  var a = 10;
+  let b = 20;
+  const c = 30;
+  console.log(b); // 20
+}
+console.log(b); //100
+/** Functions */
+const c = 100;
+function x() {
+  const c = 10;
+  console.log(c); //10
+}
+x();
+console.log(c); //100
+/** Illegal Shadowing */
+let a = 20;
+{
+  var a = 20;
+}
+console.log(a);
+/** This is fine since var is function scoped */
+let a = 20;
+function x() {
+  var a = 20; // localscope
+}
+ console.log(a);
+
+
+ //question(test)
+ var a=10;         //globally a=10
+ {
+    var a=-10;//var is global scoped also if in brackets(only if in function it is locally scoped)
+ }
+ //now value of a=-10
+ let b=a;//b=-10 in global scope
+ {
+    let b =-20;//let is block scoped so b=-20 in block scoped now
+ }
+ console.log(b);//we are printing outside of block so b value in global scoped is -10 hence -10 is printed
+

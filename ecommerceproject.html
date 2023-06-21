@@ -21,10 +21,10 @@
         <!-- button to search items -->
         <form>
             <label>Search</label>
-            <input id="Search" type="text"></input>
+            <input id="search" type="text"></input>
 
-            <!-- WE GIVE THE CLASS IN BELOW COMMAND AS btn so in javascript we will write const button=getelementsbyclass="btn" -->
-            <button type="button" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <!--WE GIVE THE CLASS IN BELOW COMMAND AS btn so in javascript we will write const button=getelementsbyclass="btn" -->
+            <button type="button" id="searchbutton" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i></button>
         </form>
         
         <ul class="unorderlist1">
@@ -55,6 +55,27 @@
 
     <main>
 
+    <!-- for name and email -->
+     <form class="form1" > 
+    <span>
+        <label>Enter Name</label>
+        <input id="nameid" type="text"></input>
+
+        <label>Password</label>
+        <input id="passwordid" type="password"></input>
+
+<!-- 
+            //IMPRT BUTTON LIBRARY FROM INTERNET FOR SUBMIT BUTTON HERE
+             just type in button bootstrap to access this specific command -->
+        
+
+        <!-- in the below command we have given class as btn2 to distinguish between btn and btn2 while writing javascript commands  -->
+        <button type="button" class="btn3 btn-primary" style="margin-top :2em;">Submit</button>
+        <button type = "reset" value = "Reset" >Reset</button>
+    </span>
+    </form> 
+
+
     <!-- for text on image and the image at top -->
     <div class="container">
     <img class="imageid" src="https://img.freepik.com/premium-photo/top-view-online-shopping-concept-with-credit-card-smart-phone-computer-isolated-office-yellow-table-background_315337-5991.jpg">
@@ -65,17 +86,15 @@
         <h5>Hope you have a great time browsing the website :)</h5>
     </div>
 
+    <!-- the form for entering name and product
+    button to submit the details -->
+    <form class="form" >
+        <span>
+            <label>Enter Image URl</label>
+            <input id="imageId" type="text"></input>
 
-        <!-- the form for entering name and product
-        button to submit the details -->
-
-        <form class="form" >
-            <span>
-            <label>Enter Name</label>
-            <input id="nameid" type="text"></input>
-
-            <label>Product</label>
-            <input id="productid" type="text"></input>
+            <label>Enter Product</label>
+            <input id="descriptionId" type="text"></input>
 
 <!-- 
                 //IMPRT BUTTON LIBRARY FROM INTERNET FOR SUBMIT BUTTON HERE
@@ -88,7 +107,6 @@
         </span>
         </form>
         </div>
-        </section>
 
         
        
@@ -133,23 +151,25 @@
             </div>
         </section>
 
+        <!-- /*thumbnail2*/ -->
         <div class="thumbnail2">
                 <div class="card2">
                     <img class="image2" src="https://static.helpjuice.com/helpjuice_production/uploads/upload/image/4752/direct/1585157958423-Customer%20Support.png">
-                    <p style="text-align:center; color: black">
+                    <p style="text-align:center; color: white">
                         Customer Support
                     </p>
                 </div>
 
                 <div class="card2">
                     <img class="image2" src="https://www.edesk.com/wp-content/uploads/2021/03/find-trending-products-sell-ecommerce.png">
-                    <p style="text-align:center; color: black">
+                    <p style="text-align:center; color: white">
                         Deals of the day
                     </p>
                 </div>
-
         </div>
-             <h1 class="bigsale">The Big Sale day is here!</h1>
+
+
+            <h1 class="bigsale">The Big Sale day is here!</h1>
             <p class="paraclass">
                 <b>Sale 50% flat on all items</b> listen on website for next 24 hours.
                 Buy <b>products worth 5000 to earn gift vouchers</b> and more.<b>Shopping worth 
@@ -161,18 +181,17 @@
                 Dream Ecommerce site!
                 Enjoy shopping for your favourite items!
             </p>
-        
-            
-       
+        </section>
+
+        <!-- for the imported products below the images -->
+        <section class="jssection">
         </section>
     </main>
 </body>
 
 
-<footer class="footer">
-    <p>Click the below image to check live score :)</p>
-    <a href="https://www.cricbuzz.com/"><img class="footerimage" src="https://i.pinimg.com/originals/c8/c4/58/c8c458b420f6fb7aba81ef02e64a0182.gif" ></a>
+<footer class="footer">    
     <p  class="para">Thankyou for visiting this site. Hope you had a great time!</p>
-    <a href="#">Back to Top</a>
+    <a href="#"><img class="footerimage" src="https://cdn3.vectorstock.com/i/1000x1000/94/87/back-to-top-arrow-sign-icon-scroll-up-symbol-vector-4029487.jpg"></a>
 </footer>
 </html>
