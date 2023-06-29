@@ -12,8 +12,9 @@ const section=document.getElementsByClassName("thumbnails")[0];
 const search = document.getElementById("search");
 //above line is to get search bar by ID
 let products;
-const children = section.children;
+const children = section.children; //this will be an array as section is an array
 //the above line is to create the children of the section
+//getelementsbytagname does not return an array...however if we pass an array to it it does returns an array..therefore whqatever datatype u pass in that that dataype value is returned
 
 fetch("https://dummyjson.com/products")
   .then((res) => res.json())
