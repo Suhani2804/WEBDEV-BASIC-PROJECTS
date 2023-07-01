@@ -1,0 +1,45 @@
+<!-- //this file has thebasic react code along with a little explanation of all lines -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Learning React</h1>
+    <!-- //above line is not affected by react as it is not inside root and e are using react inside root -->
+
+    <!-- to write hello world in html -->
+    <div id="root">
+        <!-- //below line will be over written by the below react code as we are making changes in root in react -->
+        <h1>Hello world!</h1>
+    </div>
+</body>
+
+<!-- to write hello world in js -->
+<script>
+    //const header= document.createElement('h1');
+    //header.innerHTML="hello world";
+    //const root=document.getElementById("root");
+    //root.appendChild(header);
+</script>
+
+
+<!-- 
+we import the below links from typing react cdn on the browser -->
+<!-- the below lines need to above the react code always...if they are after the react code the compiler does not know about react so it throws error -->
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<!-- there are two things above that are imported
+react and react dom
+react is basically a library that provides us features
+react dom is glue between our react and dom...it glues react with dom
+both of them are separate because react native(it is for mobile applications) does not require react dom so that people for app applications do not require react dom and they can use react only -->
+<!-- CDN links are not preferred as if react versions are updaqted we will have to change our cdn links continuously...thus we use react packages from npm react from browser
+However even better is create react app -->
+
+
+
+</html> 
