@@ -35,4 +35,6 @@
 //root is a dom element
 //react-dom is used to connect with html pages
 //props- they are properties that we pss to the react components
+
+
 //config driven -ui tells us how we want to display our webite by using API
